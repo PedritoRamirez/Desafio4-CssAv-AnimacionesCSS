@@ -1,0 +1,275 @@
+*, p{
+  margin: 0;
+  padding: 0;
+}
+
+.cabecera{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(57, 57, 133);
+  color: whitesmoke;
+  grid-area: cabecera; 
+}
+.cont1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.fa-car-rear{
+  padding-inline: 10px;
+}
+.fa-bars{
+  padding-right: 15px;
+}
+i{
+  padding-inline: 5px;
+} 
+.contenedor{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 60px 155px 1fr 60px;
+  grid-template-areas: 
+  "cabecera"
+  "barrabus"
+  "productos"
+  "piedepagina";
+}
+.barrabus{
+  background-color: rgb(189, 182, 182); 
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: barrabus; 
+  /* border: solid 5px yellow; */
+}
+.imgslide{
+  height: 130px;
+}
+
+.slide{
+  width: 100vw;
+  max-width: 1000px;
+  height: 190px;              
+  overflow: hidden;
+  border-radius: 10px;
+  object-fit: fill;
+  display: flex;
+  align-items: center;
+  grid-area: slide;                              /* Area del Nav */
+}
+.slide ul{
+  display:flex;
+  gap: 20px;
+  padding: 0;
+  width: 400%;
+  height: 100%;
+  margin-top: 5px;
+  animation: slide 10s infinite alternate cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+@keyframes slide{
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+  }
+
+.productos{ 
+  background-color: white; 
+  grid-area: productos; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fa-1x{
+  font-size: 20px;
+}
+h1{
+  font-size: 22px;
+}
+h2{
+  font-size: 18px;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+}
+button{
+  margin-bottom: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: rgb(57, 57, 133);
+  color: azure;
+}
+select{
+  width: 65%;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+.cardpie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imgcard{
+  width: 95%;
+  /* height: 200px; */
+  padding-top: 8px;
+}
+span{
+  margin: 10px;
+}
+.cards{
+  /* border: solid 5px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 5px;  */ 
+} 
+.card{
+  background-color: #ececec;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  border: solid 1px rgb(182, 179, 179);
+  margin: 5px;
+}
+.imgPag{
+  width: 50%;
+  height: 40px;
+  padding: 25px;
+}
+.piedepagina{
+  background-color: rgb(44, 44, 129);
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+  grid-area: piedepagina; 
+}
+.cont2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redso{
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.fa-brands{
+  margin: 0;
+  padding-left: 10px;
+}
+.textopie{
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.lista{
+  display: none;
+}
+@media(min-width: 576px){
+  .contenedor{
+    grid-template-columns: 235px 1fr;
+    grid-template-rows: 175px 1fr 60px;
+    grid-template-areas: 
+    "cabecera barrabus"
+    "cabecera productos"
+    "piedepagina productos";
+  }
+  .cards{
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    padding-top: 5px;  
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .card{
+    width: 27%;
+    height: 300px;  /* 280px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    border: solid 1px rgb(182, 179, 179);
+    margin: 5px;
+  }
+  .imgPag{
+    width: 30%;
+    height: 30px;
+    padding: 5px;
+    
+  }
+  .fa-bars{
+    display: none;
+  }
+  .cabecera{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(57, 57, 133);
+    color: whitesmoke;  
+    padding-top: 15px;  
+  } 
+  .lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    padding-top: 60px;
+    list-style: none;
+  }
+  li{
+    margin: 10px;
+  }
+  .productos{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%; 
+    height: 100%;
+  }
+  .piedepagina{
+    background-color: rgb(44, 44, 129);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure; 
+  }
+}
