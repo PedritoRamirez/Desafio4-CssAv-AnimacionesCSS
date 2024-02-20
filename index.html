@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/b23b71b84c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Electric Car Store</title>
@@ -11,15 +12,17 @@
     <div class="contenedor">
       <header class="cabecera">
         <div class="cont1">
-          <i class="fa-solid fa-car-rear fa-1x"></i>
-          <h1>Autos Electricos</h1>
+          <img class="logo" src="./assets/img/logo.png" alt="Logo de la empresa">
+          <div class="titulo">
+            <h1>Autos</h1>
+            <h1>&nbsp;Electricos</h1>
+          </div>
         </div>
         <i class="fa-solid fa-bars fa-1x"></i> 
         <ul class="lista">
-          <li>Inicio</li>
-          <li>Catálogo</li>
-          <li>Ofertas</li>
-          <li>Contacto</li>
+          <li><a class="lsta" href="#car3">Catálogo</a></li>
+          <li><a class="lsta" href="#car9">Oferta</a></li>
+          <li><a class="lsta" href="#car7">Contacto</a></li>
         </ul>
       </header>
       <nav class="barrabus">
@@ -31,8 +34,8 @@
           <ul>
             <li><a href="#car1"><img class="imgslide" src="./assets/img/auto1.jpg" alt="Imagen de automovil"></a></li>
             <li><a href="#car2"><img class="imgslide" src="./assets/img/auto2.jpg" alt="Imagen de automovil"></a></li>
-            <li><a href="#car3"><img class="imgslide" src="./assets/img/auto3.jpg" alt="Imagen de automovil"></a></li>
             <li><a href="#car9"><img class="imgslide" src="./assets/img/auto9.jpg" alt="Imagen de automovil"></a></li>
+            <li><a href="#car3"><img class="imgslide" src="./assets/img/auto3.jpg" alt="Imagen de automovil"></a></li>
             <li><a href="#car5"><img class="imgslide" src="./assets/img/auto5.jpg" alt="Imagen de automovil"></a></li>
             <li><a href="#car6"><img class="imgslide" src="./assets/img/auto6.jpg" alt="Imagen de automovil"></a></li>
             <li><a href="#car7"><img class="imgslide" src="./assets/img/auto7.jpg" alt="Imagen de automovil"></a></li>
@@ -53,63 +56,63 @@
           <article id="car1" class="card">
             <img class="imgcard" src="./assets/img/auto1.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Baic X35</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car2" class="card">
             <img class="imgcard" src="./assets/img/auto2.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Grandi i10</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car3" class="card">
             <img class="imgcard" src="./assets/img/auto3.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Bolt EUV</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car4" class="card">
             <img class="imgcard" src="./assets/img/auto4.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Jeepcap UB40</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car5" class="card">
             <img class="imgcard" src="./assets/img/auto5.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Onix Turbo</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car6" class="card">
             <img class="imgcard" src="./assets/img/auto6.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Gc Yucon</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car7" class="card">
             <img class="imgcard" src="./assets/img/auto7.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Depor ¡Oferta!</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car8" class="card">
             <img class="imgcard" src="./assets/img/auto8.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: Spin Activ</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
           <article id="car9" class="card">
             <img class="imgcard" src="./assets/img/auto9.jpg" alt="Foto auto">
             <div class="cardpie">
-              <span><h3>Modelo: City Car</h3></span>
+              <span><h3>Modelo: CarBS ¡Oferta!</h3></span>
               <button>Ver mas</button>
             </div>
           </article>
@@ -118,11 +121,13 @@
       </main>
       <footer class="piedepagina">
         <div class="cont2">
-          <img class="redso" src="./assets/img/face.svg" alt="">
-          <i class="fa-brands fa-square-instagram fa-1x"></i>
+          <!-- <img class="redso" src="./assets/img/face.svg" alt="">
+          <i class="fa-brands fa-square-instagram fa-1x"></i> -->
+          <a href="https://www.facebook.com" target="_blank" ><img class="redso" src="./assets/img/face.svg" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
         </div>
         <div class="textopie">
-          <h4>Todos los derechos</h4>
+          <h4>Todos los derechos &nbsp;</h4>
           <h4>reservados</h4> 
         </div>
       </footer>
